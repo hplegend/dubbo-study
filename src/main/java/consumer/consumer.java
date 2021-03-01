@@ -14,7 +14,7 @@ public class consumer {
 
         // 此处模拟spring容器
         HelloService service = ProxyFactory.getProxy(HelloService.class);
-        String result = service.sayHello("yukang");
+        String result = service.sayHello("hplegend");
         System.out.println(result);
 
     }

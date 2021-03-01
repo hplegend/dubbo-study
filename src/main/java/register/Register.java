@@ -75,7 +75,7 @@ public class Register {
             FileInputStream fis = new FileInputStream("D://register.text");
             ObjectInputStream ois = new ObjectInputStream(fis);
             return (Map<String,Map<URL,Class>>)ois.readObject();
-        }catch (IOException | ClassNotFoundException e){
+        }catch (Exception e){
             e.printStackTrace();
         }
         return null;
